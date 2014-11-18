@@ -3,5 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
     
+    <SeekBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/change_size"
+        android:layout_marginTop="14dp" />
+    
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/button_text" />
 
 </RelativeLayout>
