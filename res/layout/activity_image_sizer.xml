@@ -16,5 +16,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/image"
         tools:layout="@layout/toolbar_fragment" />
+    
+    <fragment android:name="long0.shaalan.imagesizer.InputFragment"
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        tools:layout="@layout/input_fragment" />
 
 </RelativeLayout>

@@ -5,9 +5,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.EditText;
 
-public class ImageFragment extends Fragment {
+public class InputFragment extends Fragment {
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater,
@@ -15,7 +15,9 @@ public class ImageFragment extends Fragment {
 		//Inflate the layout for this fragment
 		View view = inflater.inflate(R.layout.image_fragment,
 				container, false);
-		final ImageView image = (ImageView) view.findViewById(R.id.imageview);
+		final EditText inputRed = (EditText) view.findViewById(R.id.edit_red);
+		final EditText inputGreen = (EditText) view.findViewById(R.id.edit_green);
+		final EditText inputBlue = (EditText) view.findViewById(R.id.edit_blue);
 		return view;
 	}
 
