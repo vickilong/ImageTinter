@@ -5,23 +5,16 @@
     tools:context=".ImageSizerActivity" >
 
     <fragment android:name="long0.shaalan.imagesizer.ImageFragment"
-        android:id="@+id/image"
+        android:id="@+id/image_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/image_fragment" />
             
-    <fragment android:name="long0.shaalan.imagesizer.ToolbarFragment"
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/image"
-        tools:layout="@layout/toolbar_fragment" />
-    
     <fragment android:name="long0.shaalan.imagesizer.InputFragment"
-        android:id="@+id/input"
+        android:id="@+id/input_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
+        android:layout_below="@+id/image_fragment"
         tools:layout="@layout/input_fragment" />
 
 </RelativeLayout>

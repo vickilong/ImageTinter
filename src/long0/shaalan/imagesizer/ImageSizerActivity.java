@@ -7,23 +7,23 @@
 
 package long0.shaalan.imagesizer;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
 
-public class ImageSizerActivity extends ActionBarActivity {
+public class ImageSizerActivity extends ActionBarActivity implements InputFragment.ButtonListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_sizer);
+    }
+    
+    public void onButtonClick(int color) {
+    	ImageFragment chameleon = (ImageFragment) getSupportFragmentManager().findFragmentById(R.id.image_fragment);
+    	chameleon.changeImageTint(color, PorterDuff.Mode.LIGHTEN);
     }
 
 
