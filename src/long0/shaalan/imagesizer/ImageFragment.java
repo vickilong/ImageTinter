@@ -1,3 +1,10 @@
+//**************************************************************
+//  ImageFragment.java     Vicki Long and Nadine Shaalan
+//
+//  ImageFragment holds an image of a chameleon that can have
+//  its tint changed through values obtained from InputFragment.
+//**************************************************************
+
 package long0.shaalan.imagesizer;
 
 import android.graphics.PorterDuff;
@@ -22,6 +29,8 @@ public class ImageFragment extends Fragment {
 		return view;
 	}
 	
+	//public void changeImageTint(int color, PorterDuff.mode mode)
+	//The tint of the chameleon is changed by using setColorFilter()
 	public void changeImageTint(int color, PorterDuff.Mode mode) {
 		sImage.setColorFilter(color, mode);
 	}

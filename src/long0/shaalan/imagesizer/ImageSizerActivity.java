@@ -2,7 +2,9 @@
 //  ImageSizerActivity.java     Vicki Long and Nadine Shaalan
 //
 //  ImageSizerActivity holds two fragments that allow the user
-//  to change the size of an image using a toolbar.
+//  to change the tint of an image using user input values. The
+//  project was changed and therefore the current project name
+//  does not apply.
 //**************************************************************
 
 package long0.shaalan.imagesizer;
@@ -21,6 +23,9 @@ public class ImageSizerActivity extends ActionBarActivity implements InputFragme
         setContentView(R.layout.activity_image_sizer);
     }
     
+    //public void onButtonClick(int color)
+    //When the button is clicked, the picture is tinted to a color created from
+    //the values that the user enters into the EditTexts.
     public void onButtonClick(int color) {
     	ImageFragment chameleon = (ImageFragment) getSupportFragmentManager().findFragmentById(R.id.image_fragment);
     	chameleon.changeImageTint(color, PorterDuff.Mode.LIGHTEN);

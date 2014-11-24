@@ -1,3 +1,10 @@
+//**************************************************************
+//  InputFragment.java     Vicki Long and Nadine Shaalan
+//
+//  InputFragment holds several EditTexts that allow the user
+//  to change the tint of the image in ImageFragment.
+//**************************************************************
+
 package long0.shaalan.imagesizer;
 
 import android.app.Activity;
@@ -48,6 +55,8 @@ public class InputFragment extends Fragment {
 		mGreenValue = 0;
 		mBlueValue = 0;
 		
+		//When the button is pressed, a Color as an integer is constructed using the
+		//values in the EditTexts.
 		tintButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				mRedValue = Integer.parseInt(inputRed.getText().toString());
@@ -61,6 +70,8 @@ public class InputFragment extends Fragment {
 		return view;
 	}
 	
+	//public int convertInputToColor (int red, int green, int blue)
+	//Returns a Color in the form of an integer from rgb values
 	public int convertInputToColor (int red, int green, int blue) {
 		return Color.rgb(red, green, blue);
 	}
